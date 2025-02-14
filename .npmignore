@@ -4,3 +4,6 @@ node_modules
 eslint.config.mjs
 pnpm-lock.yaml
 renovate.json
+release.config.mjs
+.github/*
+*.tgz
