@@ -1,0 +1,5 @@
+.gitignore
+node_modules
+.npmrc
+eslint.config.mjs
+pnpm-lock.yaml
