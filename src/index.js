@@ -15,11 +15,5 @@ export default tseslint.config(
   {
     files: ["**/*.{ts,tsx}"],
     extends: [tseslint.configs.recommended, tseslint.configs.stylistic],
-  },
-  {
-    files: ["**/*.{ts,tsx,js,jsx}"],
-    rules: {
-      "import/no-unresolved": ["warn", { commonjs: true, amd: true }],
-    },
   }
 );
