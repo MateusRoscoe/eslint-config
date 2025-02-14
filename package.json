@@ -1,5 +1,5 @@
 {
-  "name": "@roscoe/eslint-config",
+  "name": "@mateusroscoe/eslint-config",
   "version": "1.0.0",
   "description": "Eslint configuration package",
   "main": "src/index.js",
