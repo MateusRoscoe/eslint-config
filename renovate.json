@@ -2,6 +2,23 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
-    "group:allNonMajor"
+    ":semanticCommits"
+  ],
+  "group:allNonMajor": false,
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "groupName": "dev-dependencies-minor-patch",
+      "group:allNonMajor": true,
+      "commitMessagePrefix": "chore(deps):",
+      "automerge": true,
+      "automergeType": "pr"
+    },
+    {
+      "matchDepTypes": ["dependencies"],
+      "groupName": "prod-dependencies-minor-patch",
+      "group:allNonMajor": true,
+      "commitMessagePrefix": "fix(deps):"
+    }
   ]
 }
